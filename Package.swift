@@ -1,8 +1,11 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.3.0
 import PackageDescription
 
 let package = Package(
     name: "Result",
+    platforms: [
+        .iOS(.v12),
+    ],
     products: [
         .library(name: "Result", targets: ["Result"]),
     ],
